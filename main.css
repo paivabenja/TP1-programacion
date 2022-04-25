@@ -31,31 +31,34 @@ body {
 }
 
 img {
-  margin-top: 50px;
+  margin: 50px auto;
   height: 150px;
-  border-radius: 10px;
+  border-radius: 100px;
+  display: block;
+  filter: brightness(70%);
+}
+
+h1 {
+  font-weight: 400;
 }
 
 a {
   text-decoration: none;
   color: white;
-  margin: 5px;
+  /* margin: 10px 0; */
   padding: 10px;
   background-color: #666;
   border-radius: 10px;
+  display: block;
 }
 
-a:focus {
-  text-decoration: none;
-  color: white;
+a:hover {
+  transition: 0.5s;
+  transform: scale(105%);
+  background-color: #777;
 }
 
-a:active {
-  text-decoration: none;
-  color: white;
-}
-
-a:link {
-  text-decoration: none;
-  color: white;
+img:hover {
+  transition: 0.5s;
+  filter: brightness(100%);
 }
